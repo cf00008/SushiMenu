@@ -14,6 +14,8 @@
 <script src="vendor/js/bootstrap/bootstrap.js"></script>
 <title>寿司メニュー</title>
 <link rel="stylesheet" href="css/import.css">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
 	<header class="headerrow">
@@ -21,244 +23,182 @@
 			<div class="title">寿司メニュー</div>
 		</div>
 	</header>
-	<div class="container">
-		<div class="bs-example">
-			<div class="panel-group" id="accordion">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title">おすすめ
-							<a data-toggle="collapse" data-parent="#accordion" href="#oshushume" class="togglebtn">▼</a>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">
+								おすすめ <a data-toggle="collapse" data-parent="#accordion" href="#oshushume" class="togglebtn">▼</a>
+							</div>
+						</div>
+						<div id="oshushume" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+								</ul>
+							</div>
+							<div class="panel-footer">
+								<a data-toggle="collapse" data-parent="#accordion" href="#oshushume" class="togglebtn">▲</a>
+							</div>
 						</div>
 					</div>
-					<div id="oshushume" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="javascript:void(0);" onclick="alert('すしすし');"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-							</ul>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">
+								ドリング <a data-toggle="collapse" data-parent="#accordion" href="#drink" class="togglebtn">▼</a>
+							</div>
 						</div>
-						<div class="panel-footer">
-							<a data-toggle="collapse" data-parent="#accordion" href="#oshushume" class="togglebtn">▲</a>
+						<div id="drink" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+								</ul>
+							</div>
+							<div class="panel-footer">
+								<a data-toggle="collapse" data-parent="#accordion" href="#drink" class="togglebtn">▲</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title">ドリング
-							<a data-toggle="collapse" data-parent="#accordion" href="#drink" class="togglebtn">▼</a>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">
+								にぎり <a data-toggle="collapse" data-parent="#accordion" href="#nigiri" class="togglebtn">▼</a>
+							</div>
+						</div>
+						<div id="nigiri" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+								</ul>
+							</div>
+							<div class="panel-footer">
+								<a data-toggle="collapse" data-parent="#accordion" href="#nigiri" class="togglebtn">▲</a>
+							</div>
 						</div>
 					</div>
-					<div id="drink" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="javascript:void(0);" onclick="alert('すしすし');"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-							</ul>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">
+								軍艦・巻物 <a data-toggle="collapse" data-parent="#accordion" href="#gunkan" class="togglebtn">▼</a>
+							</div>
 						</div>
-						<div class="panel-footer">
-							<a data-toggle="collapse" data-parent="#accordion" href="#drink" class="togglebtn">▲</a>
+						<div id="gunkan" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+								</ul>
+							</div>
+							<div class="panel-footer">
+								<a data-toggle="collapse" data-parent="#accordion" href="#gunkan" class="togglebtn">▲</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title">にぎり
-							<a data-toggle="collapse" data-parent="#accordion" href="#nigiri" class="togglebtn">▼</a>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">
+								デザート <a data-toggle="collapse" data-parent="#accordion" href="#dessert" class="togglebtn">▼</a>
+							</div>
 						</div>
-					</div>
-					<div id="nigiri" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="javascript:void(0);" onclick="alert('すしすし');"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-							</ul>
-						</div>
-						<div class="panel-footer">
-							<a data-toggle="collapse" data-parent="#accordion" href="#nigiri" class="togglebtn">▲</a>
+						<div id="dessert" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+									<li class="link_box"><img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
+										<p>マグロマグロマグロマグロ</p>
+										<p>￥1,200</p> <a href="javascript:void(0);" data-toggle="modal" data-target="#menu_detail"></a></li>
+								</ul>
+							</div>
+							<div class="panel-footer">
+								<a data-toggle="collapse" data-parent="#accordion" href="#dessert" class="togglebtn">▲</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title">軍艦・巻物
-							<a data-toggle="collapse" data-parent="#accordion" href="#gunkan" class="togglebtn">▼</a>
-						</div>
-					</div>
-					<div id="gunkan" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="javascript:void(0);" onclick="alert('すしすし');"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-							</ul>
-						</div>
-						<div class="panel-footer">
-							<a data-toggle="collapse" data-parent="#accordion" href="#gunkan" class="togglebtn">▲</a>
-						</div>
-					</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="menu_detail" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span>✖</span>
+					</button>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title">デザート
-							<a data-toggle="collapse" data-parent="#accordion" href="#dessert" class="togglebtn">▼</a>
-						</div>
-					</div>
-					<div id="dessert" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="javascript:void(0);" onclick="alert('すしすし');"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-								<li class="link_box">
-									<img alt="ドリング" src="img/common/menu_ele.png" class="img-rounded">
-									<p>マグロマグロマグロマグロ</p>
-									<p>￥1,200<p>
-									<a href="#"></a>
-								</li>
-							</ul>
-						</div>
-						<div class="panel-footer">
-							<a data-toggle="collapse" data-parent="#accordion" href="#dessert" class="togglebtn">▲</a>
-						</div>
-					</div>
+				<div class="modal-body">
+					<img alt="詳細" src="img/common/menu_ele_wide.png">
 				</div>
 			</div>
 		</div>

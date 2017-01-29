@@ -31,7 +31,7 @@ div.row-margin-menu{
 	display: inline-block;
     position:relative;
     margin:0px auto 20px;
-    padding: 0px 25px;
+    padding: 0px 10px;
 }
 .link_box > img{
     border:solid 1px #CCC;
@@ -52,6 +52,10 @@ div.row-margin-menu{
 
 .panel-body > ul{
 	list-style-type: none;
+}
+
+.panel-area{
+	width: 85%;
 }
 /**
 .panel-title > a,
