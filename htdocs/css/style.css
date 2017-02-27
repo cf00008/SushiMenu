@@ -1,18 +1,30 @@
 @CHARSET "UTF-8";
 
 .headerrow{
-	margin-top: 50px;
-	margin-bottom: 35px;
+	margin: auto 0px;
+	background-image: url("../img/header/header.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
 }
+.footerrow{
+	position:fixed;
+	bottom:0px;
+	margin: auto 0px;
+	height: 100px;
+	width:100%;
+	background-color: #000000;
+}
+
 header .title{
-	font-size: 45PX;
-	background-color: black;
+	font-size: 65PX;
+	font-weight:bold;
+	background-color: transparent;
 	color: white;
 	border-radius: 0.8em;
 	width: 50%;
-	height: 65px;
-	margin: auto;
-	padding: auto;
+	height: 80px;
+	margin: 50px auto;;
 	vertical-align: middle;
 }
 
