@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css" />
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+<script src="vendor/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<title>壽司菜單</title>
+<link rel="stylesheet" href="css/import.css">
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#menuscroll").slick({
+			accessibility : true,
+			initialSlide : 4,
+			cssEase : 'ease',
+			slidesToShow : 8,
+			slidesToScroll : 1,
+			arrows : true,
+			dots : false,
+			infinite : false,
+			swipeToSlide : true,
+		});
+	});
+</script>
+<style type="text/css">
+#menuscroll div a {
+	/*-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	-moz-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;*/
+	text-decoration: none;
+	font-size: 50px;
+	color: #000000;
+}
+
+}
+.m-nav {
+	margin: 10px 30px;
+	overflow: scroll;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.m-nav li {
+	margin: 10px;
+	display: inline-block;
+	list-style-type: none;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.m-nav a {
+	display: block;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	/* writing-mode: tb-rl;*/
+	/* IE独自仕様 */
+	/*writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-o-writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;*/
+}
+
+.m-nav span {
+	position: relative;
+	top: 0;
+	left: 10px;
+}
+</style>
+</head>
+<body>
+	<header class="headerrow">
+		<div class="row">
+			<div class="col-sm-2 text-left">
+				<div class="row" style="margin: 5px auto;">
+					<a href="list.html" class="btn btn-default">日本語</a>
+				</div>
+				<div class="row" style="margin: 5px auto;">
+					<a href="javascript:void(0);" class="btn btn-info">中国語</a>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="title">●●●●寿司</div>
+		</div>
+	</header>
+	<div class="container">
+		<div style="width: 95%; margin: 30px auto 30px;">
+			<div id="menuscroll" class="row">
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>１<br/>２</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>１<br/>１</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>１<br/>０</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>９</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>８</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>７</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>６</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>５</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>４</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>３</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>２</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+				<div>
+					<a href="detail_cn.html"><span>鷄<br/>蛋<br/>１</span><img src="img/common/egg.png" width="50"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footerrow">
+		<div class="tabbable tabs-below">
+			<ul class="nav nav-pills">
+				<li role="presentation" class="active"><a href="javascript:void(0);">菜單</a></li>
+				<li role="presentation"><a href="videolist_cn.html">精彩視頻</a></li>
+			</ul>
+		</div>
+		<div class="row" style="display: none;">
+			<div class="col-sm-12 ">
+				<button class="btn btn-default">ホーム</button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

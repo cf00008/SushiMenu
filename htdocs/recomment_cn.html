@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css" />
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+<script src="vendor/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<title>寿司メニュー</title>
+<link rel="stylesheet" href="css/import.css">
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#menuscroll-aa").slick({
+			infinite : false,
+			accessibility : true,
+			initialSlide : 4,
+			cssEase : 'ease',
+			slidesToShow : 5,
+			slidesToScroll : 1,
+			arrows : true,
+			dots : false,
+			swipeToSlide : true,
+		});
+	});
+</script>
+<style type="text/css">
+#menuscroll-aa div a {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #000000;
+}
+#menuscroll-aa div a img{
+	margin: 0px auto;
+}
+#menuscroll-aa div a span{
+	display: block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.m-nav {
+	margin: 10px 30px;
+	overflow: scroll;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.m-nav li {
+	margin: 10px;
+	display: inline-block;
+	list-style-type: none;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.m-nav a {
+	display: block;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	writing-mode: tb-rl;
+	/* IE独自仕様 */
+	writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-o-writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+}
+
+.m-nav span {
+	position: relative;
+	top: 0;
+	left: 10px;
+}
+</style>
+</head>
+<body>
+	<header class="headerrow">
+		<div class="row">
+			<div class="col-sm-2 text-left">
+				<div class="row" style="margin: 5px auto;">
+					<a href="recomment.html" class="btn btn-default">日本語</a>
+				</div>
+				<div class="row" style="margin: 5px auto;">
+					<a href="javascript:void(0);" class="btn btn-info">中国語</a>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="title">●●●●寿司</div>
+		</div>
+	</header>
+	<div class="container" style="height: 500px; vertical-align: middle;">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="row">
+					<img src="img/common/egg_rec_02.jpg" width="100%" />
+				</div>
+				<div class="row">
+					<div class="col-sm-12">熱量：150kcal</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">原產地：北海道</div>
+				</div>
+			</div>
+			<div class="col-sm-8" style="padding: 20px;">
+				<div class="row">
+					<div style="float: right;"><a href="list_cn.html" class="btn btn-default">返回</a></div>
+					<p>鷄蛋分先吃派與後吃派！</p>
+					<ul>
+						<li>先吃派・・・鷄蛋可以成爲判斷壽司職人水平的標準</li>
+						<li>後吃派・・・因鷄蛋爲甜味，所以作爲甜點最後吃比較合適</li>
+					</ul>
+					<p>
+						先吃派認爲，鷄蛋的味道與米粒的味道是判斷一個壽司厨師標準。<br/>所以，最先吃鷄蛋就可以馬上對這個店的料理水準有所瞭解。
+					</p>
+					<p>
+						但是，我們并不推薦最先吃鷄蛋！<br> 在壽司厨師有很多討厭最先選擇鷄蛋的客人。<br> 最先選擇鷄蛋就是證明想要試探厨師的手藝。<br>
+						但如果不是對壽司十分精通的人，還是推薦不要這樣做。
+					</p>
+					<p>
+						後吃派認爲，甜味的鷄蛋適合當作最後的甜點。<br/>不衹是壽司，大部分料理都是最後吃甜點。<br/>而精通壽司的人大部分都認爲鷄蛋就適合甜點的位置。
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footerrow">
+		<hr>
+		<div style="width: 85%; margin:10px auto 10px;">
+			<div id="menuscroll-aa" class="row">
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_02.jpg" style="width: 100px;"/><br/>推薦９</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_02.jpg" style="width: 100px;"/><br/>推薦８</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_03.jpg" style="width: 100px;"/><br/>推薦７</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_04.jpg" style="width: 100px;"/><br/>推薦６</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_05.jpg" style="width: 100px;"/><br/>推薦５</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_01.jpg" style="width: 100px;"/><br/>推薦４</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_02.jpg" style="width: 100px;"/><br/>推薦３</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_03.jpg" style="width: 100px;"/><br/>推薦２</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_04.jpg" style="width: 100px;"/><br/>推薦１</a>
+				</div>
+				<div>
+					<a href="recomment_cn.html"><img src="img/common/egg_rec_05.jpg" style="width: 100px;"/><br/>推薦１</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
