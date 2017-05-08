@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css" />
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+<script src="vendor/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<title>寿司メニュー</title>
+<link rel="stylesheet" href="css/style.css?ver=20170509000001">
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+</script>
+<style type="text/css">
+.pseudo-link {
+display: inline-block;
+cursor: pointer;
+width: 100px;
+height: 100px;
+margin: 10px;
+padding: auto;
+vertical-align: middle;
+border: 1px solid red;
+}
+
+.pseudo-link>.thumnail {
+width: 100%;
+height: 70%; position : relative;
+margin: auto;
+padding: 0px;
+position: relative;
+}
+
+.pseudo-link>.thumnail>img {
+position : absolute;
+width: 100%;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+position: absolute;
+}
+
+.pseudo-link>.textlabel {
+width: 100%;
+height: 30%;
+bottom: 0;
+line-height: 1em;
+}
+</style>
+</head>
+<body>
+	<header class="headerrow">
+		<div class="row">
+			<div class="col-sm-2 text-left">
+				<div class="row" style="margin: 5px auto;">
+					<a href="#" class="btn btn-default">日本語</a>
+				</div>
+				<div class="row" style="margin: 5px auto;">
+					<a href="#" class="btn btn-info">中国語</a>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="title">●●●●寿司</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div style="float: right;"><a href="videolist.html" class="btn btn-default">戻る</a></div>
+		</div>
+		<div class="row col-md-12 text-center videoplay_area">
+			<div id="menuscroll-video" class="row">
+				<div>
+					<video controls width="640" height="360">
+						<source src="video/sample.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footerrow">
+		<div class="tabbable tabs-below">
+			<ul class="nav nav-pills">
+				<li role="presentation"><a href="list.html">メニュー</a></li>
+				<li role="presentation" class="active"><a href="javascript:void(0);">動画一覧</a></li>
+			</ul>
+		</div>
+		<div class="row" style="display: none;">
+			<div class="col-sm-12 ">
+				<button class="btn btn-default">ホーム</button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

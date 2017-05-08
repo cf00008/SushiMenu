@@ -1,11 +1,19 @@
 @CHARSET "UTF-8";
 
 .headerrow{
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
 	margin: auto 0px;
 	background-image: url("../img/header/header.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
+	z-index: 999;
+}
+.container{
+	margin-top: 170px;
 }
 .footerrow{
 	position:fixed;
@@ -33,6 +41,9 @@ header .title{
 
 }
 
+.videoplay_area{
+	margin: auto;
+}
 div.row-margin-menu{
 	margin-left: 0px;
 	margin-right: 0px;

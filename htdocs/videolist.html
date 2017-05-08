@@ -10,25 +10,65 @@
 <link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.css">
 <link rel="stylesheet" href="vendor/css/bootstrap/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css"
+	href="vendor/css/slick/slick-theme.css" />
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
 <script src="vendor/js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <title>寿司メニュー</title>
-<link rel="stylesheet" href="css/import.css">
+<link rel="stylesheet" href="css/style.css?ver=20170509000001">
 <script type="text/javascript" src="js/common.js"></script>
-
 <script type="text/javascript">
-	$(document).ready(function() {
-		$("#menuscroll-video").slick();
+	$(function() {
+		$(".pseudo-link").click(function(e) {
+			window.location.href = "videoplay.html";
+		})
 	});
 </script>
 <style type="text/css">
+.pseudo-link {
+	display: inline-block;
+	cursor: pointer;
+	width: 200px;
+	height: 150px;
+	margin: 10px 20px;
+	vertical-align: middle;
+	border: 1px solid #aaaaaa;
+}
 
+.pseudo-link>.thumnail {
+	width: 100%;
+	height: 80%;
+	position: relative;
+	margin: auto;
+	padding: 0px;
+	position: relative;
+}
+
+.pseudo-link>.thumnail>img {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+}
+
+.pseudo-link>.textlabel {
+	width: 100%;
+	height: 20%;
+	text-align:center;
+	bottom: 0;
+	line-height: 1em;
+}
 </style>
 </head>
 <body>
@@ -48,13 +88,72 @@
 		</div>
 	</header>
 	<div class="container">
-		<div style="width: 95%; margin: 30px auto 30px;text-align: center;vertical-align: middle;">
-			<div id="menuscroll-video" class="row">
-				<div>
-					<video controls width="640" height="360">
-						<source src="video/sample.mp4" type="video/mp4">
-					</video>
+		<div class="row col-md-10 col-md-offset-1">
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
 				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
+			</div>
+			<div class="pseudo-link">
+				<div class="thumnail">
+					<img src="img/common/thumnail.png" alt="" />
+				</div>
+				<p class="textlabel">ニッコウイワナ</p>
 			</div>
 		</div>
 	</div>
@@ -62,7 +161,8 @@
 		<div class="tabbable tabs-below">
 			<ul class="nav nav-pills">
 				<li role="presentation"><a href="list.html">メニュー</a></li>
-				<li role="presentation" class="active"><a href="javascript:void(0);">動画一覧</a></li>
+				<li role="presentation" class="active"><a
+					href="javascript:void(0);">動画一覧</a></li>
 			</ul>
 		</div>
 		<div class="row" style="display: none;">
