@@ -7,62 +7,73 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.css">
 <link rel="stylesheet" href="vendor/css/bootstrap/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css"
+	href="vendor/css/slick/slick-theme.css" />
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="vendor/js/jquery/jquery.blockUI.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
 <script src="vendor/js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
-<script type="text/javascript" src="vendor/js/simple-modal/simple-modal.js"></script>
+<script type="text/javascript"
+	src="vendor/js/simple-modal/simple-modal.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <title>壽司菜單</title>
 <link rel="stylesheet" href="css/style.css?ver=10000001">
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript">
-	$(document).ready(function() {
-		$(".pseudo-link").click(function(e) {
-			var flg = false;
-			if (flg) {
-				window.location.href = "videoplay.html";
-			} else {
-				$.blockUI({
-					message : $('#question'),
-					css : {
-						width : "490px",
-						top : "164px",
-						left : "272px",
+	$(document).ready(
+			function() {
+				$(".pseudo-link").click(function(e) {
+					var flg = false;
+					if (flg) {
+						window.location.href = "videoplay.html";
+					} else {
+						$.blockUI({
+							message : $('#question'),
+							css : {
+								width : "490px",
+								top : "164px",
+								left : "272px",
+							}
+						});
 					}
 				});
-			}
-		});
-		$('#btn_closeaaa').click(function() {
-			// update the block message
-			$.blockUI({
-				message : "<h1>Remote call in progress...</h1>"
-			});
+				$('#btn_closeaaa').click(function() {
+					// update the block message
+					$.blockUI({
+						message : "<h1>Remote call in progress...</h1>"
+					});
 
-			$.ajax({
-				url : 'wait.php',
-				cache : false,
-				complete : function() {
-					// unblock when remote call returns
+					$.ajax({
+						url : 'wait.php',
+						cache : false,
+						complete : function() {
+							// unblock when remote call returns
+							$.unblockUI();
+						}
+					});
+				});
+
+				$('#btn_close').click(function() {
 					$.unblockUI();
-				}
+					return false;
+				});
+				$('.blockOverlay').click(function(){
+					$.unblockUI();
+					return false;
+				});
 			});
-		});
-
-		$('#btn_close').click(function() {
-			$.unblockUI();
-			return false;
-		});
-	});
 </script>
 <style type="text/css">
 .pseudo-link {
@@ -101,6 +112,14 @@
 	text-align: center;
 	bottom: 0;
 	line-height: 1em;
+}
+.btn-video-colse{
+	display: block;
+	float: right;
+	position: absolute;
+	right:2px;
+	top:2px;
+	z-index: 999;
 }
 </style>
 </head>
@@ -194,7 +213,8 @@
 		<div class="tabbable tabs-below">
 			<ul class="nav nav-pills">
 				<li role="presentation"><a href="list_cn.html">菜單</a></li>
-				<li role="presentation" class="active"><a href="javascript:void(0);">精彩視頻</a></li>
+				<li role="presentation" class="active"><a
+					href="javascript:void(0);">精彩視頻</a></li>
 			</ul>
 		</div>
 		<div class="row" style="display: none;">
@@ -205,8 +225,10 @@
 	</footer>
 	<!-- モーダル・ダイアログ -->
 	<div id="question" style="display: none; cursor: default">
-		<div>
-			<a id="btn_close" href="javascript:void(0)" style="display:block;position: relative; right: -46%; top: 50%;'"><img alt="close button" src="img/btn/close-button-simple.png" width="40"></a>
+		<div style="position: relative;">
+			<a id="btn_close" href="javascript:void(0)" class="btn-video-colse">
+				<img alt="close button" src="img/btn/close-button-simple-white.svg" width="30">
+			</a>
 			<video controls width="480" height="360">
 				<source src="video/sample.mp4" type="video/mp4">
 			</video>

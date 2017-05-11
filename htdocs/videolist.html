@@ -102,6 +102,14 @@
 	bottom: 0;
 	line-height: 1em;
 }
+.btn-video-colse{
+	display: block;
+	float: right;
+	position: absolute;
+	right:2px;
+	top:2px;
+	z-index: 999;
+}
 </style>
 </head>
 <body>
@@ -205,8 +213,10 @@
 	</footer>
 	<!-- モーダル・ダイアログ -->
 	<div id="question" style="display: none; cursor: default">
-		<div>
-			<a id="btn_close" href="javascript:void(0)" style="display:block;position: relative; right: -46%; top: 50%;'"><img alt="close button" src="img/btn/close-button-simple.png" width="40"></a>
+		<div style="position: relative;">
+			<a id="btn_close" href="javascript:void(0)" class="btn-video-colse">
+				<img alt="close button" src="img/btn/close-button-simple-white.svg" width="30">
+			</a>
 			<video controls width="480" height="360">
 				<source src="video/sample.mp4" type="video/mp4">
 			</video>
