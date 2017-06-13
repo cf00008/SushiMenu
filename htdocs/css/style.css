@@ -13,7 +13,7 @@
 	z-index: 999;
 }
 .container{
-	margin-top: 170px;
+	margin-top: 100px;
 }
 .container-fluid{
 	margin-top: 170px;
@@ -36,12 +36,11 @@ header .title{
 	color: white;
 	border-radius: 0.8em;
 	width: 50%;
-	height: 80px;
+	height: 100px;
 	margin: auto;;
 	vertical-align: middle;
 	position: relative;
-	top: -50px;
-
+	/*top: -50px;*/
 }
 
 .videoplay_area{
@@ -102,3 +101,6 @@ div.row-margin-menu{
 	height: 100%;
 }
 **/
+h1 {
+	font-size: 50px;
+}
