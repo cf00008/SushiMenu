@@ -102,5 +102,23 @@ div.row-margin-menu{
 }
 **/
 h1 {
+	/*border-radius: 25px;*/
+	margin: 30px auto;
+	/*background-color: #f5deb3;*/
+	font-size: 80px;
+}
+h2 {
+	/*border-radius: 25px;*/
+	margin: 30px auto;
+	/*background-color: #f5deb3;*/
 	font-size: 50px;
+}
+
+p {
+	font-size: 30px;
+	text-indent: 1em;
+}
+
+menulabel{
+
 }
