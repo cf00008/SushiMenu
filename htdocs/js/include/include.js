@@ -1,6 +1,6 @@
 var includeTimeStamp = +new Date();
 document.open();
-document.writeln('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
+//document.writeln('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
 document.writeln('<meta http-equiv="Pragma" content="no-cache">');
 document.writeln('<meta http-equiv="Cache-Control" content="no-cache">');
 document.writeln('<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->');
