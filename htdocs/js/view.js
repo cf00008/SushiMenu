@@ -20,3 +20,18 @@ $(function(){
 		$(this).addClass(primaryClass);
 	});
 });
+
+/**
+ * サイドメニュー開閉処理
+ */
+$(function(){
+	$(document).ready(function() {
+		$('#simple-menu').sidr({
+			displace : false
+		});
+	});
+
+	$('#overlay, #close-menu-button').click(function() {
+		$.sidr('close', 'sidr');
+	});
+})

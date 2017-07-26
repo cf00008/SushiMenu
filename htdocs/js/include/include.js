@@ -1,21 +1,23 @@
 var includeTimeStamp = +new Date();
 document.open();
-//document.writeln('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
 document.writeln('<meta http-equiv="Pragma" content="no-cache">');
 document.writeln('<meta http-equiv="Cache-Control" content="no-cache">');
-document.writeln('<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->');
+//jQuery (necessary for Bootstrap\'s JavaScript plugins)
 document.writeln('<script src="vendor/js/jquery/1.12.4/jquery.min.js"></script>');
 document.writeln('<script src="vendor/js/jqueryui/1.12.1/jquery-ui.min.js"></script>');
 document.writeln('<script type="text/javascript" src="vendor/js/jqueryblockui/jquery.blockUI.js"></script>');
-document.writeln('<!-- bootstrap3 -->');
+// bootstrap3
 document.writeln('<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.css">');
 document.writeln('<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap-theme.css">');
 document.writeln('<script src="vendor/js/bootstrap/bootstrap.js"></script>');
-document.writeln('<!-- slick slider lib -->');
+// slick slider lib
 document.writeln('<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css" />');
 document.writeln('<link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css" />');
 document.writeln('<script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>');
-document.writeln('<!-- custom javascript -->');
+//Sidr
+document.writeln('<link rel="stylesheet" type="text/css" href="vendor/css/sidr/jquery.sidr.light.css" />');
+document.writeln('<script type="text/javascript" src="vendor/js/sidr/jquery.sidr.js"></script>');
+// custom javascript
 document.writeln('<link rel="stylesheet" href="css/style.css?verid=' + includeTimeStamp + '">');
 document.writeln('<script type="text/javascript" src="js/common.js?verid=' + includeTimeStamp + '"></script>');
 document.writeln('<script type="text/javascript" src="js/view.js?verid=' + includeTimeStamp + '"></script>');

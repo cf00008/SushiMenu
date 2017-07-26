@@ -2,16 +2,32 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Security-Policy"
+	content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 <script src="components/loader.js"></script>
 <link rel="stylesheet" href="components/loader.css">
 <script type="text/javascript" src="js/include/include.js?ver=1000001"></script>
 <title>寿司メニュー</title>
 </head>
 <body>
+	<div id="sidr">
+		<ul>
+			<li><a id="close-menu-button" href="#" class="text-right">戻る</a></li>
+			<li><a href="start.html">スタート</a></li>
+			<li class="active"><a href="page1.html">飲み物注文</a></li>
+			<li><a href="page2.html">料理注文</a></li>
+			<li><a href="page4.html">注文確認</a></li>
+			<li><a href="page5.html">待機</a></li>
+		</ul>
+	</div>
 	<header class="headerrow">
+		<div class="row text-left">
+			<div class="col-md-10 col-md-offset-2">
+				<a id="simple-menu" href="#sidr" style="margin: 5px auto;"><img src="img/btn/btn_menu.png" width="50px" height="50px"></a>
+			</div>
+		</div>
 		<!--
 		<div class="row">
 			<div class="col-sm-2 text-left">
@@ -149,9 +165,12 @@
 				<p>如果您已選好飲品，請點擊繼續按鈕。</p>
 			</div>
 			<div class="row text-center">
-				<a href="page2.html" class="btn btn-info btn-lg" style="font-weight:bold; font-size: 20px; margin: 30px; padding: 15px;">繼　續</a>
+				<a href="page2.html" class="btn btn-info btn-lg"
+					style="font-weight: bold; font-size: 20px; margin: 30px; padding: 15px;">繼
+					續</a>
 			</div>
 		</div>
 	</div>
+	<script src="js/view.js"></script>
 </body>
 </html>
